@@ -1,0 +1,19 @@
+{
+  "name": "regulus",
+  "description": "reader",
+  "main": "",
+  "authors": [
+    "Justin B. <contact@machineelf.design>",
+    "Jesse M. <example@website.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
