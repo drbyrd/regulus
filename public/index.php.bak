@@ -1,0 +1,47 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "lc01132la1";
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+// Selects the DB
+mysqli_select_db($conn,'regulus_main');
+
+// Get Main Data for Book
+$body = "SELECT ID, part_1_top, part_1_content, part_1_bottom FROM book_main";
+$result = $conn->query($body);
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+		$bodytext = $row["part_1_top"]. " " . $row["part_1_content"]. " " . $row["part_1_bottom"];
+		$bodyclean = utf8_encode($bodytext); // Easiest, Smartest Way to Fix PHP/UTF-8 Compatability Issues
+		echo $bodyclean;
+				
+	}
+}
+	else {
+		echo "Nope";
+	}
+	
+	
+// Get Meta Data for Book
+$meta = "SELECT ID, Book_Link, Book_Image, Book_Category, Book_Topic, Book_Author, Book_Description, Book_Source, Book_Publisher, Book_Edition, Book_ISBN, Publication_Date, Date_Added FROM book_meta";
+$result = $conn->query($meta);
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+		$metatext = $row["ID"]. " " . $row["Book_Link"]. " " . $row["Book_Image"]. " " . $row["Book_Category"]. " " . $row["Book_Topic"]. " " . $row["Book_Author"]. " " . $row["Book_Description"]. " " . $row["Book_Source"]. " " . $row["Book_Publisher"]. " " . $row["Book_Edition"]. " " . $row["Book_ISBN"]. " " . $row["Publication_Date"]. " " . $row["Date_Added"];
+		$metaclean = utf8_encode($metatext);
+		echo $metaclean;
+	}
+}
+	else {
+		echo "Nope";
+	}
+
+$conn->close();
+?>

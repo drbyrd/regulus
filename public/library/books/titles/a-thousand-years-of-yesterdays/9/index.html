@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="no-js" dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Regulus Reader | Welcome</title>
+    <link href="../../../../../css/foundation.css" rel="stylesheet">
+    <link href="../../../../../css/app.css" rel="stylesheet">
+    <link href="../../../../../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Byrd -->
+
+    <style>
+
+
+</style>
+</head>
+
+<body>
+    <!-- MOBILE NAVIGATION -->
+    <!-- MAIN SECTION -->
+
+
+    <div class="account">
+        <ul>
+            <li class="ripple">Sign Out</li>
+
+
+            <li class="ripple">Switch account</li>
+
+
+            <li class="ripple">Send feedback</li>
+
+
+            <li class="ripple">Help</li>
+        </ul>
+    </div>
+
+
+    <div class="side-menu">
+        <div class="menu-holder">
+            <button class="menu"></button>
+
+            <p>Regulus <span>Reader</span></p>
+        </div>
+
+
+        <ul>
+            <li class="active">
+                <a href="../../../../">Home</a>
+            </li>
+
+
+            <li>
+                <a href="../../">Browse Books</a>
+            </li>
+
+
+            <li>Brows Podcasts</li>
+
+
+            <li>Browse Video</li>
+
+
+            <li>Podcasts</li>
+
+
+            <li>Browse Stations</li>
+
+
+            <li>Shop</li>
+        </ul>
+        <button class="cta" type="button">Subscribe Now</button>
+    </div>
+
+
+    <div class="side-menu-overlay">
+    </div>
+
+
+    <header>
+        <button class="menu ripple"></button>
+
+        <h1>All Books</h1>
+        <input class="desktop-only" id="input" placeholder="Search" type=
+        "text"> <label class="mobile-only ripple" for="input"></label>
+
+        <div class="profile">
+        </div>
+
+<!--
+        <ul>
+            <li class="ripple">
+                <a href="../all/">All</a>
+            </li>
+
+
+            <li class="ripple">
+                <a href="../new/">New</a>
+            </li>
+
+
+            <li class="ripple">
+                <a href="../genre/">Genre</a>
+            </li>
+
+
+            <li class="ripple">
+                <a href="../../topic/">Topics</a>
+            </li>
+
+
+            <li style="list-style: none; display: inline">
+                <div class="slider">
+                </div>
+            </li>
+        </ul>
+      -->
+    </header>
+
+    <main>
+        <div class="wrap row">
+            <div class="small-12 medium-7 column">
+
+
+<br>
+                <h3 id="book-title"></h3>
+                <a href="/"><h5 id="book-author"></h5></a>
+                <br>
+
+                <p id="book-discription"></p>
+
+            </div>
+
+
+            <div class="small-12 medium-5 column">
+              <div class="libro">
+                <span></span>
+                <img src="../../../../assets/books/rosicrucian/amorc/h_spencer_lewis/rrb001_-_a_thousand_years_of_yesterdays/cow2.jpg" alt="" />
+              </div>
+            </div>
+  <div class="wrap row">
+              <div class="small-12 medium-12 column">
+              <hr>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+
+    <script src="../../../../../js/vendor/jquery.js">
+    </script>
+    <script src="../../../../../js/vendor/what-input.js">
+    </script>
+    <script src="../../../../../js/vendor/foundation.js">
+    </script>
+    <script src="../../../../../js/app.js">
+    </script>
+    <script src="../../../../../js/jquery.stellar.min.js">
+    </script>
+    <script>
+                $.stellar();
+    </script>
+
+
+    <script>
+    var xhttp1 = new XMLHttpRequest();
+    xhttp1.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            xmlImportOne(this);
+        }
+    };
+    xhttp1.open("GET", "../../../../assets/books/rosicrucian/amorc/h_spencer_lewis/rrb001_-_a_thousand_years_of_yesterdays/rrb001_info.xml", true);
+    xhttp1.send();
+
+    function xmlImportOne(xml) {
+        var xmlDoc1 = xml.responseXML;
+        document.getElementById("book-title").innerHTML =
+        xmlDoc1.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    }
+
+
+    var xhttp2 = new XMLHttpRequest();
+    xhttp2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            xmlImportTwo(this);
+        }
+    };
+    xhttp2.open("GET", "../../../../assets/books/rosicrucian/amorc/h_spencer_lewis/rrb001_-_a_thousand_years_of_yesterdays/rrb001_info.xml", true);
+    xhttp2.send();
+
+    function xmlImportTwo(xml) {
+        var xmlDoc2 = xml.responseXML;
+        document.getElementById("book-author").innerHTML =
+        xmlDoc2.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+    }
+
+    var xhttp3 = new XMLHttpRequest();
+    xhttp3.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            xmlImportThree(this);
+        }
+    };
+    xhttp3.open("GET", "../../../../assets/books/rosicrucian/amorc/h_spencer_lewis/rrb001_-_a_thousand_years_of_yesterdays/rrb001_info.xml", true);
+    xhttp3.send();
+
+    function xmlImportThree(xml) {
+        var xmlDoc3 = xml.responseXML;
+        document.getElementById("book-discription").innerHTML =
+        xmlDoc3.getElementsByTagName("discription")[0].childNodes[0].nodeValue;
+    }
+
+    </script>
+
+</body>
+</html>

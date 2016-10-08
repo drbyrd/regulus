@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<meta name="generator" content="Adobe InDesign 10.1" />
+		<meta name="cover" content="x204.png" />
+		<dc:title>Mansions of the Soul</dc:title>
+		<dc:creator></dc:creator>
+		<dc:subject></dc:subject>
+		<dc:description></dc:description>
+		<dc:publisher></dc:publisher>
+		<dc:date>2015-04-28T16:28:04Z</dc:date>
+		<dc:source></dc:source>
+		<dc:relation></dc:relation>
+		<dc:coverage></dc:coverage>
+		<dc:rights></dc:rights>
+		<dc:language>en-US</dc:language>
+		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
+	</metadata>
+	<manifest>
+		<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul" href="Mansions-of-the-Soul.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-1" href="Mansions-of-the-Soul-1.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-2" href="Mansions-of-the-Soul-2.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-3" href="Mansions-of-the-Soul-3.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-4" href="Mansions-of-the-Soul-4.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-5" href="Mansions-of-the-Soul-5.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-6" href="Mansions-of-the-Soul-6.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-7" href="Mansions-of-the-Soul-7.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-8" href="Mansions-of-the-Soul-8.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-9" href="Mansions-of-the-Soul-9.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-10" href="Mansions-of-the-Soul-10.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-11" href="Mansions-of-the-Soul-11.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-12" href="Mansions-of-the-Soul-12.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-13" href="Mansions-of-the-Soul-13.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-14" href="Mansions-of-the-Soul-14.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-15" href="Mansions-of-the-Soul-15.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-16" href="Mansions-of-the-Soul-16.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-17" href="Mansions-of-the-Soul-17.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-18" href="Mansions-of-the-Soul-18.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-19" href="Mansions-of-the-Soul-19.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-20" href="Mansions-of-the-Soul-20.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-21" href="Mansions-of-the-Soul-21.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-22" href="Mansions-of-the-Soul-22.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-23" href="Mansions-of-the-Soul-23.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-24" href="Mansions-of-the-Soul-24.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-25" href="Mansions-of-the-Soul-25.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-26" href="Mansions-of-the-Soul-26.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-27" href="Mansions-of-the-Soul-27.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-28" href="Mansions-of-the-Soul-28.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-29" href="Mansions-of-the-Soul-29.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-30" href="Mansions-of-the-Soul-30.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-31" href="Mansions-of-the-Soul-31.xhtml" media-type="application/xhtml+xml" />
+		<item id="Mansions-of-the-Soul-32" href="Mansions-of-the-Soul-32.xhtml" media-type="application/xhtml+xml" />
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="x10362.png" href="image/10362.png" media-type="image/png" />
+		<item id="x10364.png" href="image/10364.png" media-type="image/png" />
+		<item id="x10366.png" href="image/10366.png" media-type="image/png" />
+		<item id="x204.png" href="image/204.png" media-type="image/png" />
+		<item id="AMORC--Black-.jpg" href="image/AMORC-%28Black%29.jpg" media-type="image/jpeg" />
+		<item id="Fig1.png" href="image/Fig1.png" media-type="image/png" />
+		<item id="Fig2.jpg" href="image/Fig2.jpg" media-type="image/jpeg" />
+		<item id="Fig3.jpg" href="image/Fig3.jpg" media-type="image/jpeg" />
+		<item id="Fig4.png" href="image/Fig4.png" media-type="image/png" />
+		<item id="Mansions-of-the-Soul-Cover.jpg" href="image/Mansions-of-the-Soul-Cover.jpg" media-type="image/jpeg" />
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cover" linear="no" />
+		<itemref idref="Mansions-of-the-Soul" />
+		<itemref idref="Mansions-of-the-Soul-1" />
+		<itemref idref="Mansions-of-the-Soul-2" />
+		<itemref idref="Mansions-of-the-Soul-3" />
+		<itemref idref="Mansions-of-the-Soul-4" />
+		<itemref idref="Mansions-of-the-Soul-5" />
+		<itemref idref="Mansions-of-the-Soul-6" />
+		<itemref idref="Mansions-of-the-Soul-7" />
+		<itemref idref="Mansions-of-the-Soul-8" />
+		<itemref idref="Mansions-of-the-Soul-9" />
+		<itemref idref="Mansions-of-the-Soul-10" />
+		<itemref idref="Mansions-of-the-Soul-11" />
+		<itemref idref="Mansions-of-the-Soul-12" />
+		<itemref idref="Mansions-of-the-Soul-13" />
+		<itemref idref="Mansions-of-the-Soul-14" />
+		<itemref idref="Mansions-of-the-Soul-15" />
+		<itemref idref="Mansions-of-the-Soul-16" />
+		<itemref idref="Mansions-of-the-Soul-17" />
+		<itemref idref="Mansions-of-the-Soul-18" />
+		<itemref idref="Mansions-of-the-Soul-19" />
+		<itemref idref="Mansions-of-the-Soul-20" />
+		<itemref idref="Mansions-of-the-Soul-21" />
+		<itemref idref="Mansions-of-the-Soul-22" />
+		<itemref idref="Mansions-of-the-Soul-23" />
+		<itemref idref="Mansions-of-the-Soul-24" />
+		<itemref idref="Mansions-of-the-Soul-25" />
+		<itemref idref="Mansions-of-the-Soul-26" />
+		<itemref idref="Mansions-of-the-Soul-27" />
+		<itemref idref="Mansions-of-the-Soul-28" />
+		<itemref idref="Mansions-of-the-Soul-29" />
+		<itemref idref="Mansions-of-the-Soul-30" />
+		<itemref idref="Mansions-of-the-Soul-31" />
+		<itemref idref="Mansions-of-the-Soul-32" />
+	</spine>
+	<guide>
+		<reference type="cover" href="cover.xhtml" title="Cover" />
+		<reference type="toc" href="Mansions-of-the-Soul-4.xhtml#_idContainer005" title="Table of Contents" />
+	</guide>
+</package>

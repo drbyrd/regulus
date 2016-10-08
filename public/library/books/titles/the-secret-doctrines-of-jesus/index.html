@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html class="no-js" dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Regulus Reader | Welcome</title>
+    <link href="../../../../css/foundation.css" rel="stylesheet">
+    <link href="../../../../css/app.css" rel="stylesheet">
+    <link href="../../../../font-awesome/css/font-awesome.min.css" rel=
+    "stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- - - - - - - - - - - - - - - - - - - -
+  OFF CANVAS MENUS
+  - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Profile dropdown -->
+
+
+    <div class="account">
+        <ul>
+            <li class="ripple">Sign Out</li>
+
+
+            <li class="ripple">Switch account</li>
+
+
+            <li class="ripple">Send feedback</li>
+
+
+            <li class="ripple">Help</li>
+        </ul>
+    </div>
+    <!-- //
+      Profile dropdown -->
+    <!-- left side off canvas men -->
+
+
+    <div class="side-menu">
+        <div class="menu-holder">
+            <button class="menu"></button>
+
+            <p>Regulus <span>Reader</span></p>
+        </div>
+
+
+        <ul>
+            <li class="active">
+                <a href="../../../../">Home</a>
+            </li>
+
+
+            <li>
+                <a href="../../">Browse Books</a>
+            </li>
+
+
+            <li>Brows Podcasts</li>
+
+
+            <li>Browse Video</li>
+
+
+            <li>Podcasts</li>
+
+
+            <li>Browse Stations</li>
+
+
+            <li>Shop</li>
+        </ul>
+        <button class="cta" type="button">Subscribe Now</button>
+    </div>
+    <!-- //
+      left side off canvas men -->
+    <!-- Off canvas menu overlay -->
+
+
+    <div class="side-menu-overlay">
+    </div>
+    <!-- //
+    Off canvas menu overlay -->
+    <!-- - - - - - - - - - - - - - - - - - - -
+    HEADER
+    - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <header>
+        <!-- Header Hamberger -->
+        <button class="menu ripple"></button> <!-- //
+        Header Hamberger -->
+         <!-- Header Title -->
+
+
+        <h1>All Books</h1>
+        <input class="desktop-only" id="input" placeholder="Search" type=
+        "text"> <label class="mobile-only ripple" for="input"></label> <!-- //
+        Header Title -->
+         <!-- Profile Avatar -->
+
+
+        <div class="profile">
+        </div>
+        <!-- //
+        Profile Avatar -->
+        <!-- Secondary Hearder Menu
+
+
+        <ul>
+            <li class="ripple">
+                <a href="../all/">All</a>
+            </li>
+
+
+            <li class="ripple">
+                <a href="../new/">New</a>
+            </li>
+
+
+            <li class="ripple">
+                <a href="../genre/">Genre</a>
+            </li>
+
+
+            <li class="ripple">
+                <a href="../../topic/">Topics</a>
+            </li>
+
+
+            <li style="list-style: none; display: inline">
+                <div class="slider">
+                </div>
+            </li>
+        </ul> -->
+        <!--//
+        Secondary Hearder Menu -->
+    </header>
+    <!-- //
+    HEADER -->
+    <!-- - - - - - - - - - - - - - - - - - - -
+    MAIN CONTENT
+    - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <main>
+        <!-- Main Wrapper -->
+
+
+        <div class="wrap row">
+            <!-- First Row-->
+
+
+            <div class="small-12 medium-12 large-7 column">
+                <!-- Book Cover 3d -->
+
+
+                <div class="libro"><span></span> <img alt="" src=
+                "book-cover.jpg"></div>
+                <br>
+                <br>
+                <!-- //
+                Book Cover 3d -->
+                 <!-- Progress bar -->
+
+
+                <div class="progress-radial progress-25">
+                    <div class="overlay">
+                        25%
+                    </div>
+                </div>
+                <!-- //
+                  Progress bar -->
+                <!--
+                Book Information via XML import Title, Athor, Discription
+                (see books.js for more documentation)
+              -->
+                <!-- Book Title -->
+
+
+                <h3 id="book-title">
+                </h3>
+                <!-- //
+                  Book Title -->
+                <!-- Book Author -->
+                 <a href="/">
+                <h5 id="book-author">
+                </h5></a><br>
+                <!-- //
+                Book Author -->
+                 <!-- Book Discription -->
+
+
+                <p id="book-discription">
+                </p>
+                <!-- //
+                    Book Discription -->
+            </div>
+            <!-- //
+              First Row-->
+            <!-- Second Row -->
+
+
+            <div class="small-12 medium-12 large-5 column">
+                <!-- Table Of Content -->
+                <br>
+                <br>
+                <br>
+                <!-- TOC Container -->
+
+
+                <div id="tocribbon">
+                    <!-- Shadow Inset -->
+
+
+                    <div class="bubble">
+                        <!-- Ribbon Rectangles -->
+
+
+                        <div class="rectangle">
+                            <h2>Table of Contents</h2>
+                        </div>
+
+
+                        <div class="triangle-l">
+                        </div>
+
+
+                        <div class="triangle-r">
+                        </div>
+                        <!-- //
+                      Ribbon Rectangles -->
+                        <!-- //
+                        TOC Ribbon -->
+                        <!-- Chapter Buttons (XML import) -->
+
+
+                        <div class="info">
+                            <a class="btn paper-raise" href="1" id=
+                            "book-chapter-one"></a> <a class="btn paper-raise"
+                            href="2" id="book-chapter-two"></a> <a class=
+                            "btn paper-raise" href="3" id=
+                            "book-chapter-three"></a> <a class=
+                            "btn paper-raise" href="4" id=
+                            "book-chapter-four"></a> <a class="btn paper-raise"
+                            href="5" id="book-chapter-five"></a> <a class=
+                            "btn paper-raise" href="6" id=
+                            "book-chapter-six"></a> <a class="btn paper-raise"
+                            href="7" id="book-chapter-seven"></a> <a class=
+                            "btn paper-raise" href="8" id=
+                            "book-chapter-eight"></a> <a class=
+                            "btn paper-raise" href="9" id=
+                            "book-chapter-nine"></a> <a class="btn paper-raise"
+                            href="10" id="book-chapter-ten"></a> <a class=
+                            "btn paper-raise" href="11" id=
+                            "book-chapter-eleven"></a> <a class=
+                            "btn paper-raise" href="12" id=
+                            "book-chapter-twelve"></a> <a class=
+                            "btn paper-raise" href="12" id=
+                            "book-chapter-thirteen"></a> <a class=
+                            "btn paper-raise" href="14" id=
+                            "book-chapter-fourteen"></a> <a class=
+                            "btn paper-raise" href="15" id=
+                            "book-chapter-fifteen"></a> <a class=
+                            "btn paper-raise" href="16" id=
+                            "book-chapter-sixteen"></a> <a class=
+                            "btn paper-raise" href="17" id=
+                            "book-chapter-seventeen"></a> <a class=
+                            "btn paper-raise" href="18" id=
+                            "book-chapter-eighteen"></a> <a class=
+                            "btn paper-raise" href="19" id=
+                            "book-chapter-nineteen"></a> <a class=
+                            "btn paper-raise" href="20" id=
+                            "book-chapter-twenty"></a> <a class=
+                            "btn paper-raise" href="21" id=
+                            "book-chapter-twentyone"></a> <a class=
+                            "btn paper-raise" href="22" id=
+                            "book-chapter-twentytwo"></a> <a class=
+                            "btn paper-raise" href="23" id=
+                            "book-chapter-twentythree"></a> <a class=
+                            "btn paper-raise" href="24" id=
+                            "book-chapter-twentyfour"></a> <a class=
+                            "btn paper-raise" href="25" id=
+                            "book-chapter-twentyfive"></a> <a class=
+                            "btn paper-raise" href="26" id=
+                            "book-chapter-twentysix"></a> <a class=
+                            "btn paper-raise" href="27" id=
+                            "book-chapter-twentyseven"></a> <a class=
+                            "btn paper-raise" href="28" id=
+                            "book-chapter-twentyeight"></a> <a class=
+                            "btn paper-raise" href="29" id=
+                            "book-chapter-twentynine"></a> <a class=
+                            "btn paper-raise" href="30" id=
+                            "book-chapter-thirty"></a> <a class=
+                            "btn paper-raise" href="31" id=
+                            "book-chapter-thirtyone"></a> <a class=
+                            "btn paper-raise" href="32" id=
+                            "book-chapter-thirtytwo"></a> <a class=
+                            "btn paper-raise" href="33" id=
+                            "book-chapter-thirtythree"></a> <a class=
+                            "btn paper-raise" href="34" id=
+                            "book-chapter-thirtyfour"></a> <a class=
+                            "btn paper-raise" href="35" id=
+                            "book-chapter-thirtyfive"></a> <a class=
+                            "btn paper-raise" href="36" id=
+                            "book-chapter-thirtysix"></a> <a class=
+                            "btn paper-raise" href="37" id=
+                            "book-chapter-thirtyseven"></a> <a class=
+                            "btn paper-raise" href="38" id=
+                            "book-chapter-thirtyeight"></a> <a class=
+                            "btn paper-raise" href="39" id=
+                            "book-chapter-thirtynine"></a> <a class=
+                            "btn paper-raise" href="40" id=
+                            "book-chapter-fourty"></a> <a class=
+                            "btn paper-raise" href="41" id=
+                            "book-chapter-fourtyone"></a> <a class=
+                            "btn paper-raise" href="42" id=
+                            "book-chapter-fourtytwo"></a> <a class=
+                            "btn paper-raise" href="43" id=
+                            "book-chapter-fourtythree"></a> <a class=
+                            "btn paper-raise" href="44" id=
+                            "book-chapter-fourtyfour"></a> <a class=
+                            "btn paper-raise" href="45" id=
+                            "book-chapter-fourtyfive"></a> <a class=
+                            "btn paper-raise" href="46" id=
+                            "book-chapter-fourtysix"></a> <a class=
+                            "btn paper-raise" href="47" id=
+                            "book-chapter-fourtyseven"></a> <a class=
+                            "btn paper-raise" href="48" id=
+                            "book-chapter-fourtyeight"></a> <a class=
+                            "btn paper-raise" href="49" id=
+                            "book-chapter-fourtynine"></a> <a class=
+                            "btn paper-raise" href="50" id=
+                            "book-chapter-fifty"></a> <a class=
+                            "btn paper-raise" href="51" id=
+                            "book-chapter-fiftyone"></a> <a class=
+                            "btn paper-raise" href="52" id=
+                            "book-chapter-fiftytwo"></a> <a class=
+                            "btn paper-raise" href="53" id=
+                            "book-chapter-fiftythree"></a> <a class=
+                            "btn paper-raise" href="54" id=
+                            "book-chapter-fiftyfour"></a> <a class=
+                            "btn paper-raise" href="55" id=
+                            "book-chapter-fiftyfive"></a> <a class=
+                            "btn paper-raise" href="56" id=
+                            "book-chapter-fiftysix"></a> <a class=
+                            "btn paper-raise" href="57" id=
+                            "book-chapter-fiftyseven"></a> <a class=
+                            "btn paper-raise" href="58" id=
+                            "book-chapter-fiftyeight"></a> <a class=
+                            "btn paper-raise" href="59" id=
+                            "book-chapter-fiftynine"></a> <a class=
+                            "btn paper-raise" href="60" id=
+                            "book-chapter-sixty"></a> <a class=
+                            "btn paper-raise" href="61" id=
+                            "book-chapter-sixtyone"></a> <a class=
+                            "btn paper-raise" href="62" id=
+                            "book-chapter-sixtytwo"></a> <a class=
+                            "btn paper-raise" href="63" id=
+                            "book-chapter-sixtythree"></a> <a class=
+                            "btn paper-raise" href="64" id=
+                            "book-chapter-sixtyfour"></a> <a class=
+                            "btn paper-raise" href="65" id=
+                            "book-chapter-sixtyfive"></a> <a class=
+                            "btn paper-raise" href="66" id=
+                            "book-chapter-sixtysix"></a> <a class=
+                            "btn paper-raise" href="67" id=
+                            "book-chapter-sixtyseven"></a> <a class=
+                            "btn paper-raise" href="68" id=
+                            "book-chapter-sixtyeight"></a> <a class=
+                            "btn paper-raise" href="69" id=
+                            "book-chapter-sixtynine"></a> <a class=
+                            "btn paper-raise" href="70" id=
+                            "book-chapter-seventy"></a> <a class=
+                            "btn paper-raise" href="71" id=
+                            "book-chapter-seventyone"></a> <a class=
+                            "btn paper-raise" href="72" id=
+                            "book-chapter-seventytwo"></a> <a class=
+                            "btn paper-raise" href="73" id=
+                            "book-chapter-seventythree"></a> <a class=
+                            "btn paper-raise" href="74" id=
+                            "book-chapter-seventyfour"></a> <a class=
+                            "btn paper-raise" href="75" id=
+                            "book-chapter-seventyfive"></a> <a class=
+                            "btn paper-raise" href="76" id=
+                            "book-chapter-seventysix"></a> <a class=
+                            "btn paper-raise" href="77" id=
+                            "book-chapter-seventyseven"></a> <a class=
+                            "btn paper-raise" href="78" id=
+                            "book-chapter-seventyeight"></a> <a class=
+                            "btn paper-raise" href="79" id=
+                            "book-chapter-seventynine"></a> <a class=
+                            "btn paper-raise" href="80" id=
+                            "book-chapter-eighty"></a> <a class=
+                            "btn paper-raise" href="81" id=
+                            "book-chapter-eightyone"></a> <a class=
+                            "btn paper-raise" href="82" id=
+                            "book-chapter-eightytwo"></a> <a class=
+                            "btn paper-raise" href="83" id=
+                            "book-chapter-eightythree"></a> <a class=
+                            "btn paper-raise" href="84" id=
+                            "book-chapter-eightyfour"></a> <a class=
+                            "btn paper-raise" href="85" id=
+                            "book-chapter-eightyfive"></a> <a class=
+                            "btn paper-raise" href="86" id=
+                            "book-chapter-eightysix"></a> <a class=
+                            "btn paper-raise" href="87" id=
+                            "book-chapter-eightyseven"></a> <a class=
+                            "btn paper-raise" href="88" id=
+                            "book-chapter-eightyeight"></a> <a class=
+                            "btn paper-raise" href="89" id=
+                            "book-chapter-eightynine"></a> <a class=
+                            "btn paper-raise" href="90" id=
+                            "book-chapter-ninety"></a> <a class=
+                            "btn paper-raise" href="91" id=
+                            "book-chapter-ninetyone"></a> <a class=
+                            "btn paper-raise" href="92" id=
+                            "book-chapter-ninetytwo"></a> <a class=
+                            "btn paper-raise" href="93" id=
+                            "book-chapter-ninetythree"></a> <a class=
+                            "btn paper-raise" href="94" id=
+                            "book-chapter-ninetyfour"></a> <a class=
+                            "btn paper-raise" href="95" id=
+                            "book-chapter-ninetyfive"></a> <a class=
+                            "btn paper-raise" href="96" id=
+                            "book-chapter-ninetysix"></a> <a class=
+                            "btn paper-raise" href="97" id=
+                            "book-chapter-ninetyseven"></a> <a class=
+                            "btn paper-raise" href="98" id=
+                            "book-chapter-ninetyeight"></a> <a class=
+                            "btn paper-raise" href="99" id=
+                            "book-chapter-ninetynine"></a>
+                        </div>
+                        <!-- //
+                          Chapter Buttons (XML import) -->
+                    </div>
+                    <!-- //
+                         Shadow Inset -->
+                </div>
+                <!-- //
+                          TOC Container -->
+            </div>
+            <!-- //
+              Second Row -->
+        </div>
+        <!-- //
+          Main Wrapper -->
+    </main>
+    <!-- //
+        MAIN CONTENT -->
+    <script src="../../../../js/vendor/jquery.js">
+    </script>
+    <script src="../../../../js/vendor/what-input.js">
+    </script>
+    <script src="../../../../js/vendor/foundation.js">
+    </script>
+    <script src="../../../../js/app.js">
+    </script>
+    <script src="../../../../js/jquery.stellar.min.js">
+    </script>
+    <script>
+                $.stellar();
+    </script>
+</body>
+</html>

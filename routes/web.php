@@ -11,6 +11,18 @@
 |
 */
 
+Route::get('/text', function () {
+    return view('booktext');
+});
+
+Route::get('/entry', function () {
+    return view('bookentry');
+});
+
+Route::post('/submit', function () {
+    return view('submit');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });

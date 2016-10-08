@@ -1,0 +1,2519 @@
+/*  - - - - - - - - - - - - - - - - - - -
+THEME STYLES
+ - - - - - - - - - - - - - - - - - - - */
+/* Normalize All */
+*,:before,:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* //
+ Normalize All */
+/* Main Body */
+body {
+    background: #F5F5F5;
+    font-family: "Roboto","Helvetica","sans-serif";
+}
+
+/* //
+  Main Body */
+/* Display on Media Query Only */
+.mobile-only {
+    display: none;
+}
+
+/* //
+  Display on Media Query Only */
+/* Main Content Container */
+main {
+    -ms-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+}
+
+/* //
+  Main Content Container */
+/* Header, Main Flex */
+header,main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 300px;
+    top: 0;
+    right: 0;
+    will-change: width;
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* //
+  Header, Main Flex */
+/* Full width header */
+header {
+    -ms-box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    background: #B33232;
+    color: #FFF;
+    position: fixed;
+    z-index: 5;
+}
+
+/* //
+  Full width header */
+/* Full width header bottom most shadow (JS)*/
+header.shadow {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.23),0 3px 12px rgba(0,0,0,0.16);
+}
+
+/* Menu button */
+.menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 12px;
+    cursor: pointer;
+    -o-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+/* //
+    Menu Button */
+/* Menu Button Hamberger */
+header .menu {
+    background: url(http://cbwconline.com/IMG/Codepen/Menu.svg) center no-repeat;
+    margin-left: 25px;
+}
+
+/* //
+  Menu Button Hamberger */
+/* Menu Button Hamberger Circle */
+header .menu:hover {
+    background-color: gray;
+}
+
+/* //
+  Menu Button Hamberger Circle */
+/* Header Title */
+header h1 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+/* //
+  Header Title */
+/* Header Search Input */
+header input {
+    background: rgba(255,255,255,0.3);
+    width: 50vw;
+    max-width: 800px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 3px;
+    margin: 5px auto;
+    color: #FFF;
+    -o-transition: .3s,width .01s;
+    -moz-transition: .3s,width .01s;
+    -webkit-transition: .3s,width .01s;
+    transition: .3s,width .01s;
+}
+
+/* //
+  Header Search Input */
+/* Header Search Input Active,Focus */
+header input:focus,header input:active {
+    background: #FFF;
+    color: #000;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.1);
+}
+
+/* //
+  Header Search Input Active,Focus */
+/* Header Search Input Icon Position */
+header label {
+    margin-left: auto;
+}
+
+/* Header Search Input Icon Position */
+/* Header Search Input Magnifine Glass Icon */
+header label {
+    width: 36px;
+    height: 36px;
+    background: url(http://cbwconline.com/IMG/Codepen/Search-White.svg) center no-repeat;
+    border-radius: 50%;
+}
+
+/* //
+  Header Search Input Magnifine Glass Icon*/
+/* Header Search Input Close Icon*/
+header label.close {
+    background: url(http://cbwconline.com/IMG/Codepen/Close-White.svg) center no-repeat;
+}
+
+/* //
+  Header Search Input Close Icon*/
+/* Header Profile Bubble */
+header .profile {
+    width: 36px;
+    height: 36px;
+    background: url(https://lh3.googleusercontent.com/-UOuFk3MaIyE/AAAAAAAAAAI/AAAAAAAAAAA/AOtt-yEtASpZiUmh0TBq1JxqceBZswmVVg/s32-c-mo/photo.jpg) center/contain no-repeat;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+/* //
+  Header Profile Bubble */
+/* Header Secondary Menu Unorder List */
+header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* //
+  Header Secondary Menu Unorder List */
+/* Header Secondary Menu List Item */
+header li {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    list-style: none;
+    padding: 15px;
+    color: #fff;
+/* Fall Back */
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* //
+    Header Secondary Menu List Item */
+/* Header Secondary Menu List Item Active */
+header li.active {
+    color: #FFF;
+}
+
+/* //
+  Header Secondary Menu List Item Active */
+/* Header Secondary Menu Slider */
+header .slider {
+    height: 3px;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* //
+  Header Secondary Menu Slider */
+/* Side-Menu - Off Canvas */
+.side-menu {
+    -ms-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: #FFF;
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -ms-transform: translateX(-100%) translateZ(0);
+    -o-transform: translateX(-100%) translateZ(0);
+    -moz-transform: translateX(-100%) translateZ(0);
+    -webkit-transform: translateX(-100%) translateZ(0);
+    transform: translateX(-100%) translateZ(0);
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* //
+  Side-Menu - Off Canvas */
+/* Side-Menu Active - On Canvas */
+.side-menu.active {
+    -ms-transform: translateX(0) translateZ(0);
+    -o-transform: translateX(0) translateZ(0);
+    -moz-transform: translateX(0) translateZ(0);
+    -webkit-transform: translateX(0) translateZ(0);
+    transform: translateX(0) translateZ(0);
+}
+
+/* //
+  Side-Menu Active - On Canvas */
+/* Side-Menu Active - */
+.side-menu.active ~ header .menu {
+    width: 0;
+    margin: 12px 8px;
+}
+
+/* Side-Menu Header */
+.side-menu .menu-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* //
+  Side-Menu Header */
+/* Side-Menu Header "Reader" Text */
+.side-menu .menu-holder span {
+    color: red;
+}
+
+/* //
+  Side-Menu Header "Reader" Text */
+/* Side-Menu Header text top spacing */
+.menu-holder p {
+    margin-top: 15px;
+}
+
+/* //
+  Side-Menu Header Text Top Spacing */
+/* Side-Menu Header Black Hamberger Icon*/
+.side-menu .menu {
+    background: url(http://cbwconline.com/IMG/Codepen/Menu-Black.svg) center no-repeat;
+}
+
+/* //
+  Side-Menu Header Black Hamberger Icon*/
+/* Side-Menu Header Black Hamberger Icon Circle*/
+.side-menu .menu:hover {
+    background-color: #EEE;
+}
+
+/* //
+  Side-Menu Header Black Hamberger Icon Circle*/
+/* Side-Menu List Item */
+.side-menu li {
+    list-style: none;
+    color: #212121;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 0 10px 18px;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 24px;
+    -o-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+/* //
+  Side-Menu List Item */
+/* Side-Menu List Item Hover */
+.side-menu li:hover {
+    background: #EEE;
+}
+
+/* //
+  Side-Menu List Item Hover */
+/* Side-Menu List Item Active */
+.side-menu li.active {
+    color: #FF5722;
+    background: #F5F5F5;
+}
+
+/* //
+  Side-Menu List Item Active */
+/* Side-Menu Call-To-Action */
+.side-menu .cta {
+    display: block;
+    background: #536DFE;
+    color: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+/* //
+  Side-Menu Call-To-Action */
+/* Side-Menu overlay Tint When Side-Menu-Active = True (JS)*/
+.side-menu-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+/* -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); */
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* //
+  Side-Menu Overlay Tint When Side-Menu-Active = True (JS) */
+/* Account Menu Container */
+.account {
+    background: #EEE;
+    position: fixed;
+    top: 62px;
+    right: 15px;
+    z-index: 6;
+    opacity: 0;
+/*  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); */
+    visibility: hidden;
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -ms-transform-origin: top right;
+    -o-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -o-transition: .15s;
+    -moz-transition: .15s;
+    -webkit-transition: .15s;
+    transition: .15s;
+    box-shadow: 0 1.5px 4px rgba(0,0,0,0.24),0 1.5px 6px rgba(0,0,0,0.12);
+}
+
+/* */
+.account:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: inherit;
+    position: absolute;
+    top: -6px;
+    right: 8px;
+    opacity: 0;
+/*  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); */
+    visibility: hidden;
+    -ms-transform: rotate(45deg) scale(0.5);
+    -o-transform: rotate(45deg) scale(0.5);
+    -moz-transform: rotate(45deg) scale(0.5);
+    -webkit-transform: rotate(45deg) scale(0.5);
+    transform: rotate(45deg) scale(0.5);
+    -o-transition: .15s;
+    -moz-transition: .15s;
+    -webkit-transition: .15s;
+    transition: .15s;
+}
+
+/* //
+*/
+/* //
+  Account Menu container */
+/* Account Menu container active */
+.account.active {
+    opacity: 1;
+/* -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); */
+    visibility: visible;
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* */
+.account.active:after {
+    opacity: 1;
+/* -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); */
+    visibility: visible;
+    -ms-transform: rotate(45deg) scale(1);
+    -o-transform: rotate(45deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+}
+
+/* //
+*/
+/* //
+  Account Menu container active */
+/* Account Menu List Item */
+.account li {
+    padding: 12px 16px;
+    list-style: none;
+    font: 300 16px Roboto;
+    cursor: pointer;
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* //
+  Account Menu List Item */
+/* Account Menu List Item hover*/
+.account li:hover {
+    background: #e1e1e1;
+}
+
+/* //
+  Account Menu List Item hover */
+/* Text Input Area */
+[type='text'],textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 57%;
+    height: 2.4375rem;
+/* padding: 0.5rem; */
+/* border: 1px solid #cacaca; */
+/* margin: 0 0 1rem; */
+/* font-family: inherit; */
+/* font-size: 1rem; */
+/* color: #0a0a0a; */
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+    border-radius: 0;
+    -o-transition: box-shadow 0.5s,border-color .25s ease-in-out;
+    -moz-transition: box-shadow 0.5s,border-color .25s ease-in-out;
+    -webkit-transition: box-shadow 0.5s,border-color .25s ease-in-out;
+    transition: box-shadow 0.5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 2%;
+    margin-top: 15px;
+}
+
+/* Text Input Area */
+/* Button and input text */
+button,input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: "Roboto","Helvetica","sans-serif";
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/* //
+Button and Input Text */
+/* Material Style Ripple Effect*/
+.ripple {
+    overflow: hidden;
+    position: relative;
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* //
+Material Style Ripple Effect*/
+/* Material Style Ripple Effect Active*/
+.ripple .rippling {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FFF;
+    pointer-events: none;
+    opacity: .4;
+/* -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); */
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+/* //
+Material Style Ripple Effect Active */
+/* Web Kit Input Place Holder */
+::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+
+/* //
+Web Kit Input Place Holder */
+/* Mozilla Vendor Input Place Holder */
+::-moz-placeholder {
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+
+/* //
+Mozilla Vendor Input Place Holder */
+/* Microsoft Vendor Input Place Holder */
+:-ms-input-placeholder {
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+
+/* //
+Microsoft Vendor Input Place Holder */
+/*  - - - - - - - - - - - - - - - - - - -
+MEDIA QUARIES 1000px
+ - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 1000px) {
+    /* Side Menu input width */
+    .side-menu.active ~ header input {
+        width: calc(50vw - 100px);
+    }/* //
+    Side Menu Inpt Width */
+
+}
+
+/*  - - - - - - - - - - - - - - - - - - -
+MEDIA QUARIES 767px
+ - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 767px) {
+    /* Side Menu Header */
+    .side-menu.active ~ header .menu {
+        margin: 12px;
+        width: 40px;
+    }
+
+    /* //
+    Side Menu Header */
+    /* Main Container Position */
+    .side-menu.active ~ header,.side-menu.active ~ main {
+        width: 100% !important;
+    }
+
+    /* //
+                    Main Container Position */
+    /* Side Menu Header Input Width*/
+    .side-menu.active ~ header input {
+        width: 50vw;
+    }
+
+    /* //
+    Side Menu Header Input width */
+    /* Display Main Overlay Tint When Side Menu = Active */
+    .side-menu.active ~ .side-menu-overlay {
+        visibility: visible;
+        opacity: 1;
+    /* -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); */
+    }
+
+    /* //
+                    Display Main Overlay Tint When Side Menu = Active */
+    /* Main Book Card Flex */
+    .card {
+        -ms-flex-preferred-size: 165px;
+        flex-basis: 165px;
+    }/* //
+                    Main Book Card Flex */
+
+}
+
+/*  - - - - - - - - - - - - - - - - - - -
+MEDIA QUARIES 599px
+ - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 599px) {
+    /* Display Only on Desktop via Media Quary */
+    .desktop-only {
+        display: none;
+    }
+
+    /* //
+                Display Only on Desktop via Media Quary */
+    /* Display Only on Mobile via Media Quary */
+    .mobile-only {
+        display: inherit;
+    }
+
+    /* //
+                  Display Only on Mobile via Media Quary */
+    /* Header Profile Bubble Explicit Margining */
+    .profile {
+        margin: 16px !important;
+    }
+
+    /* //
+    Header Profile Bubble Explicit Margining */
+    /* Header Search Input Mobile */
+    header input {
+        display: none;
+        padding: 0 12px;
+        font: 400 16px/18px Roboto !important;
+        width: calc(100vw - 130px);
+    }
+
+    /* //
+    Header Search Input Mobile */
+    /*  Header Title Hidden and Input Box on Mobile */
+    .mobile-input header h1,.mobile-input header .menu {
+        display: none;
+    }
+
+    /* Header Search Input Icon Mobile */
+    .mobile-input input {
+        display: initial;
+    }/* //
+    Header Search Input Icon Mobile */
+
+}
+
+/*  - - - - - - - - - - - - - - - - - - -
+MEDIA QUARIES 480px
+ - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 480px) {
+    /* Main Book Card Flex */
+    .card {
+        -ms-flex-preferred-size: 140px;
+        flex-basis: 140px;
+    }/* //
+    Main Book Card Flex */
+
+}
+
+/* Normalize IOS Cursor */
+.ios * {
+    cursor: pointer;
+}
+
+/* //
+Normalize IOS Cursor */
+/* Card Anchor Fill Div */
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* //
+Card Anchor Fill Div */
+/* //
+ - - - - - - - - - - - - - - - - - - -
+THEME STYLES
+ - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ BOOK CARD STYLES (LIST PAGES)
+  - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Basic Book Card */
+.card {
+    background-size: contain;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.35);
+    -ms-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 180px;
+    flex: 1 1 180px;
+    margin: 10px;
+    position: relative;
+    -o-transition: box-shadow .2s;
+    -moz-transition: box-shadow .2s;
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    cursor: pointer;
+}
+
+/* //
+Basic Book Card */
+/* Basic Book Card Title */
+.card:after {
+    content: 'Lorem Ipsum...';
+    background: #FFF;
+    height: 56px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* //
+Basic Book Card Title */
+/* Basic Book Card Shadow on Hover */
+.card:hover {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+/* //
+Basic Book Card Shadow on Hover */
+/* Basic Book Card Image rrb0001*/
+.cardbk-rrb0001 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/a-thousand-years-of-yesterdays/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0001 */
+/* Basic Book Card Title rrb0001 */
+.card-rrb0001:after {
+    content: 'A Thousand Years of Yesterdays';
+}
+
+/* //
+Basic Book Card Title rrb0001 */
+/* Basic Book Card Image rrb0002 */
+.cardbk-rrb0002 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/essays-of-a-modern-mystic/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0002 */
+/* //
+Basic Book Card Title rrb0002 */
+.card-rrb0002:after {
+    content: 'Essays Of A Modern Mystic';
+}
+
+/* //
+Basic Book Card Title rrb0002 */
+/* Basic Book Card Image rrb0003 */
+.cardbk-rrb0003 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/mansions-of-the-soul/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0003 */
+/* Basic Book Card Title rrb0003 */
+.card-rrb0003:after {
+    content: 'Mansions of the Soul';
+}
+
+/* //
+Basic Book Card Title rrb0003 */
+/* Basic Book Card Image rrb0004 */
+.cardbk-rrb0004 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/master-of-the-rose-cross/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0004 */
+/* Basic Book Card Title rrb0004 */
+.card-rrb0004:after {
+    content: 'Master of the Rose Cross';
+}
+
+/* //
+Basic Book Card Title rrb0004 */
+/* Basic Book Card Image rrb0005 */
+.cardbk-rrb0005 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/mental-poisoning/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0005 */
+/* Basic Book Card Title rrb0005 */
+.card-rrb0005:after {
+    content: 'Mental Poisoning';
+}
+
+/* //
+Basic Book Card Title rrb0005 */
+/* Basic Book Card Image rrb0006 */
+.cardbk-rrb0006 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/rosicrucian-principles-for-home-and-business/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0006 */
+/* Basic Book Card Title rrb0006 */
+.card-rrb0006:after {
+    content: 'Rosicrucian Principles for Home and Business';
+}
+
+/* //
+Basic Book Card Title rrb0006 */
+/* Basic Book Card Image rrb0007 */
+.cardbk-rrb0007 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/self-mastery-and-fate-with-the-cycles-of-life/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0007 */
+/* Basic Book Card Title rrb0007 */
+.card-rrb0007:after {
+    content: 'Self Mastery and Fate with the Cycles of Life';
+}
+
+/* //
+Basic Book Card Title rrb0007 */
+/* Basic Book Card Image rrb0008 */
+.cardbk-rrb0008 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-mystical-life-of-jesus/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0008 */
+/* Basic Book Card Title rrb0008 */
+.card-rrb0008:after {
+    content: 'The Mstical Life of Jesus';
+}
+
+/* //
+Basic Book Card Title rrb0008 */
+/* Basic Book Card Image rrb0009 */
+.cardbk-rrb0009 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-secret-doctrines-of-jesus/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0009 */
+/* Basic Book Card Title rrb0009 */
+.card-rrb0009:after {
+    content: 'The Secret Doctrines of Jesus';
+}
+
+/* //
+Basic Book Card Title rrb0009 */
+/* Basic Book Card Image rrb00010 */
+.cardbk-rrb00010 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-symbolic-prophecy-of-the-great-pyramid/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00010 */
+/* Basic Book Card Title rrb00010 */
+.card-rrb00010:after {
+    content: 'The Symbolic Prophecy of the Great Pyramid';
+}
+
+/* //
+Basic Book Card Title rrb00010 */
+/* Basic Book Card Image rrb00011 */
+.cardbk-rrb00011 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/along-civilizations-trail/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00011 */
+/* Basic Book Card Title rrb00011 */
+.card-rrb00011:after {
+    content: 'Along Civilizations Trail';
+}
+
+/* //
+Basic Book Card Title rrb00011 */
+/* Basic Book Card Image rrb00012 */
+.cardbk-rrb00012 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/behold-the-sign-ancient-symbolism/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00012 */
+/* Basic Book Card Title rrb00012 */
+.card-rrb00012:after {
+    content: 'Behold the Sign - Ancient Symbolism';
+}
+
+/* //
+Basic Book Card Title rrb00012 */
+/* Basic Book Card Image rrb00013 */
+.cardbk-rrb00013 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/cosmic-mission-fulfilled/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00013 */
+/* Basic Book Card Title rrb00013 */
+.card-rrb00013:after {
+    content: 'Cosmic Mission Fulfilled';
+}
+
+/* //
+Basic Book Card Title rrb00013
+
+
+/* Basic Book Card Image rrb00014 */
+.cardbk-rrb00014 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/mental-alchemy/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00014 */
+/* Basic Book Card Title rrb00014 */
+.card-rrb00014:after {
+    content: 'Mental Alchemy';
+}
+
+/* //
+Basic Book Card Title rrb00014 */
+/* Basic Book Card Image rrb00015 */
+.cardbk-rrb00015 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-conscious-interlude/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00015 */
+/* Basic Book Card Title rrb00015 */
+.card-rrb00015:after {
+    content: 'The Conscious Interlude';
+}
+
+/* //
+Basic Book Card Title rrb00015 */
+/* Basic Book Card Image rrb00016 */
+.cardbk-rrb00016 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-immortalized-words-of-the-past/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00016 */
+/* Basic Book Card Title rrb00016 */
+.card-rrb00016:after {
+    content: 'The Immortalized Words of the Past';
+}
+
+/* //
+Basic Book Card Title rrb00016 */
+/* Basic Book Card Image rrb00017 */
+.cardbk-rrb00017 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-sanctuary-of-self/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00017 */
+/* Basic Book Card Title rrb00017 */
+.card-rrb00017:after {
+    content: 'The Sanctuary of Self';
+}
+
+/* //
+Basic Book Card Title rrb00017 */
+/* Basic Book Card Image rrb00018 */
+.cardbk-rrb00018 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/through-the-minds-eye/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00018 */
+/* Basic Book Card Title rrb00018 */
+.card-rrb00018:after {
+    content: 'Through the Mind’s Eye';
+}
+
+/* //
+Basic Book Card Title rrb00018 */
+/* Basic Book Card Image rrb00019 */
+.cardbk-rrb00019 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/whisperings-of-self/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00019 */
+/* Basic Book Card Title rrb00019 */
+.card-rrb00019:after {
+    content: 'Whisperings of Self';
+}
+
+/* //
+Basic Book Card Title rrb00019 */
+/* Basic Book Card Image rrb00020 */
+.cardbk-rrb00020 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/yesterday-has-much-to-tell/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00020 */
+/* Basic Book Card Title rrb00020 */
+.card-rrb00020:after {
+    content: 'Yesterday Has Much To Tell';
+}
+
+/* //
+Basic Book Card Title rrb00020 */
+/* Basic Book Card Image rrb00021 */
+.cardbk-rrb00021 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/rosicrucian-reflections/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00021 */
+/* Basic Book Card Title rrb00021 */
+.card-rrb00021:after {
+    content: 'Rosicrucian Reflections';
+}
+
+/* //
+Basic Book Card Title rrb00021 */
+/* Basic Book Card Image rrb00022 */
+.cardbk-rrb00022 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/rosicrucian-questions-and-answers/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00022 */
+/* Basic Book Card Title rrb00022 */
+.card-rrb00022:after {
+    content: 'Rosicrucian Questions and Answers';
+}
+
+/* //
+Basic Book Card Title rrb00022 */
+/* Basic Book Card Image rrb00023 */
+.cardbk-rrb00023 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/so-mote-it-be/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00023 */
+/* Basic Book Card Title rrb00023 */
+.card-rrb00023:after {
+    content: 'So Mote It Be!';
+}
+
+/* //
+Basic Book Card Title rrb00023 */
+/* Basic Book Card Image rrb00024 */
+.cardbk-rrb00024 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-mystic-path/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00024 */
+/* Basic Book Card Title rrb00024 */
+.card-rrb00024:after {
+    content: 'The Mystic Path';
+}
+
+/* //
+Basic Book Card Title rrb00024 */
+/* Basic Book Card Image rrb00025 */
+.cardbk-rrb00025 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-technique-of-the-disciple/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00025 */
+/* Basic Book Card Title rrb00025 */
+.card-rrb00025:after {
+    content: 'The Technique of the Disciple';
+}
+
+/* //
+Basic Book Card Title rrb00025 */
+/* Basic Book Card Image rrb00026 */
+.cardbk-rrb00026 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-technique-of-the-master/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00026 */
+/* Basic Book Card Title rrb00026 */
+.card-rrb00026:after {
+    content: 'The Technique of the Master';
+}
+
+/* //
+Basic Book Card Title rrb00026 */
+/* Basic Book Card Image rrb00027 */
+.cardbk-rrb00027 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-way-of-the-heart/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00027 */
+/* Basic Book Card Title rrb00027 */
+.card-rrb00027:after {
+    content: 'The Way Of The Heart';
+}
+
+/* //
+Basic Book Card Title rrb00027 */
+/* Basic Book Card Image rrb00028 */
+.cardbk-rrb00028 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/great-women-initiates/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00028 */
+/* Basic Book Card Title rrb00028 */
+.card-rrb00028:after {
+    content: 'Great Women Initiates';
+}
+
+/* //
+Basic Book Card Title rrb00028 */
+/* Basic Book Card Image rrb00029 */
+.cardbk-rrb00029 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/lemuria-the-lost-continent-of-the-pacific/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00029 */
+/* Basic Book Card Title rrb00029 */
+.card-rrb00029:after {
+    content: 'Lemuria: The Lost Continent of the Pacific';
+}
+
+/* //
+Basic Book Card Title rrb00029 */
+/* Basic Book Card Image rrb00030 */
+.cardbk-rrb00030 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/what-to-eat-and-when/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00030 */
+/* Basic Book Card Title rrb00030 */
+.card-rrb00030:after {
+    content: 'What to Eat and When';
+}
+
+/* //
+Basic Book Card Title rrb00030 */
+/* Basic Book Card Image rrb00031 */
+.cardbk-rrb00031 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/egypts-ancient-heritage/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00031 */
+/* Basic Book Card Title rrb00031 */
+.card-rrb00031:after {
+    content: 'Egypts Ancient Heritage';
+}
+
+/* //
+Basic Book Card Title rrb00031 */
+/* Basic Book Card Image rrb00032 */
+.cardbk-rrb00032 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/our-cosmic-neighbors-story-of-the-stars/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00032 */
+/* Basic Book Card Title rrb00032 */
+.card-rrb00032:after {
+    content: 'Our Cosmic Neighbors: Story of the Stars';
+}
+
+/* Basic Book Card Title rrb00032 */
+/* Basic Book Card Image rrb00033 */
+.cardbk-rrb00033 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/spiritual-laws/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00033 */
+/* Basic Book Card Title rrb00033 */
+.card-rrb00033:after {
+    content: 'Spiritual Laws';
+}
+
+/* Basic Book Card Title rrb00033 */
+/* Basic Book Card Image rrb00034 */
+.cardbk-rrb00034 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/man-against-darkness/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00034 */
+/* Basic Book Card Title rrb00034 */
+.card-rrb00034:after {
+    content: 'Man Against Darkness';
+}
+
+/* //
+Basic Book Card Title rrb00034 */
+/* Basic Book Card Image rrb00035 */
+.cardbk-rrb00035 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-initiatory-process-in-ancient-egypt/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00035 */
+/* Basic Book Card Title rrb00035 */
+.card-rrb00035:after {
+    content: 'The Initiatory Process in Ancient Egypt';
+}
+
+/* Basic Book Card Title rrb00035 */
+/* Basic Book Card Image rrb00036 */
+.cardbk-rrb00036 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-word-went-forth/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00036 */
+/* Basic Book Card Title rrb00036 */
+.card-rrb00036:after {
+    content: 'The Word Went Forth';
+}
+
+/* //
+Basic Book Card Title rrb00036 */
+/* Basic Book Card Image rrb00037 */
+.cardbk-rrb00037 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/sepher-yezirah-a-book-on-creation/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00037 */
+/* Basic Book Card Title rrb00037 */
+.card-rrb00037:after {
+    content: 'Sepher Yezirah - A Book on Creation';
+}
+
+/* Basic Book Card Title rrb00037 */
+/* Basic Book Card Image rrb00038 */
+.cardbk-rrb00038 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/glands-our-invisible-guardians/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00038 */
+/* Basic Book Card Title rrb00038 */
+.card-rrb00038:after {
+    content: 'Glands - Our Invisible Guardians';
+}
+
+/* //
+Basic Book Card Title rrb00038 */
+/* Basic Book Card Image rrb00039 */
+.cardbk-rrb00039 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/herbalism-through-the-ages/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00039 */
+/* Basic Book Card Title rrb00039 */
+.card-rrb00039:after {
+    content: 'Herbalism Through The Ages';
+}
+
+/* //
+Basic Book Card Title rrb00039 */
+/* Basic Book Card Image rrb00040 */
+.cardbk-rrb00040 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/practical-mysticism/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00041 */
+/* Basic Book Card Title rrb00040 */
+.card-rrb00040:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00040 */
+/* Basic Book Card Image rrb00041 */
+.cardbk-rrb00041 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-universe-of-numbers/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00041 */
+/* Basic Book Card Title rrb00041 */
+.card-rrb00041:after {
+    content: 'The Universe of Numbers';
+}
+
+/* Basic Book Card Title rrb00041 */
+/* Basic Book Card Image rrb00042 */
+.cardbk-rrb00042 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-inner-world-of-dreams/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00042 */
+/* Basic Book Card Title rrb00042 */
+.card-rrb00042:after {
+    content: 'The Inner World of Dreams';
+}
+
+/* //
+Basic Book Card Title rrb00042 */
+/* Basic Book Card Image rrb00043 */
+.cardbk-rrb00043 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/cares-that-infest-between-man-and-happiness/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00043 */
+/* Basic Book Card Title rrb00043 */
+.card-rrb00043:after {
+    content: 'Cares that Infest - Between Man and Happiness';
+}
+
+/* //
+Basic Book Card Title rrb00043 */
+/* Basic Book Card Image rrb00044 */
+.cardbk-rrb00044 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/in-search-of-reality/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00044 */
+/* Basic Book Card Title rrb00044 */
+.card-rrb00044:after {
+    content: 'In Search of Reality';
+}
+
+/* //
+Basic Book Card Title rrb00044 */
+/* Basic Book Card Image rrb00045 */
+.cardbk-rrb00045 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-eternal-fruits-of-knowledge/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00045 */
+/* Basic Book Card Title rrb00045 */
+.card-rrb00045:after {
+    content: 'The Eternal Fruits of Knowledge';
+}
+
+/* //
+Basic Book Card Title rrb00045 */
+/* Basic Book Card Image rrb00046 */
+.cardbk-rrb00046 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/mysticism-the-ultimate-experience/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00046 */
+/* Basic Book Card Title rrb00046 */
+.card-rrb00046:after {
+    content: 'Mysticism: The Ultimate Experience';
+}
+
+/* //
+Basic Book Card Title rrb00046 */
+/* Basic Book Card Image rrb00047 */
+.cardbk-rrb00047 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/unto-thee-i-grant/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00047 */
+/* Basic Book Card Title rrb00047 */
+.card-rrb00047:after {
+    content: 'Unto Thee I Grant…';
+}
+
+/*
+Basic Book Card Title rrb00047 */
+/* Basic Book Card Image rrb00048 */
+.cardbk-rrb00048 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/rosicrucian-history-and-mysteries/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00048 */
+/* Basic Book Card Title rrb00048 */
+.card-rrb00048:after {
+    content: 'Rosicrucian History and Mysteries';
+}
+
+/* //
+Basic Book Card Title rrb00048 */
+/* Basic Book Card Image rrb00049 */
+.cardbk-rrb00049 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/treasures-of-the-rosicrucian-egyptian-museum/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00049 */
+/* Basic Book Card Title rrb00049 */
+.card-rrb00049:after {
+    content: 'Treasures of the Rosicrucian Egyptian Museum';
+}
+
+/* //
+Basic Book Card Title rrb00049 */
+/* Basic Book Card Image rrb00050 */
+.cardbk-rrb00050 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/mystics-at-prayer/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00050 */
+/* Basic Book Card Title rrb00050 */
+.card-rrb00050:after {
+    content: 'Mystics at Prayer';
+}
+
+/* //
+Basic Book Card Title rrb00050 */
+/* Basic Book Card Image rrb00051 */
+.cardbk-rrb00051 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/mystic-wisdom/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb0005 */
+/* Basic Book Card Title rrb00051 */
+.card-rrb00051:after {
+    content: 'Mystic Wisdom';
+}
+
+/* //
+Basic Book Card Title rrb00051 */
+/* Basic Book Card Image rrb00052 */
+.cardbk-rrb00052 {
+    background-repeat: round;
+    background-image: url(../library/books/titles/the-american-rosae-crucis/book-cover.jpg);
+}
+
+/* //
+Basic Book Card Image rrb00052 */
+/* Basic Book Card Title rrb00052 */
+.card-rrb00052:after {
+    content: 'The American Rosae Crucis';
+}
+
+/* //
+Basic Book Card Title rrb00052 */
+/* Basic Book Card Title rrb00054 */
+.card-rrb00054:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00054 */
+/* Basic Book Card Title rrb00055 */
+.card-rrb00055:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00055 */
+/* Basic Book Card Title rrb00056 */
+.card-rrb00056:after {
+    content: 'Practical Mysticism';
+}
+
+/* Basic Book Card Title rrb00056 */
+/* Basic Book Card Title rrb00057 */
+.card-rrb00057:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00057 */
+/* Basic Book Card Title rrb00058 */
+.card-rrb00058:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00058 */
+/* Basic Book Card Title rrb00059 */
+.card-rrb00059:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00059 */
+/* Basic Book Card Title rrb00060 */
+.card-rrb00060:after {
+    content: 'Practical Mysticism';
+}
+
+/* //
+Basic Book Card Title rrb00060 */
+/* Basic Book Ghost Card */
+.card.ghost {
+    height: 0 !important;
+    margin: 0 10px;
+}
+
+/* //
+Basic Book Ghost Card */
+/* Basic Book Ghost Card */
+.card.ghost:after {
+    display: none;
+}
+
+/* //
+Basic Book Ghost Card */
+/* //
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+BOOK CARD STYLES (LIST PAGES)
+ - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 3D LIBARAY BOOK (SINGLE BOOK PAGE)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Source https://codepen.io/Kseso/pen/osqFp Codpen user Kseso*/
+/* Libro 3D - Book Cover  */
+.libro {
+    width: 276px;
+    height: 375px;
+    margin: 20px auto 0;
+    -moz-transform: scaleX(0.88) scaleY(0.95);
+    -moz-perspective: 150px;
+    -moz-perspective-origin: right center;
+    -webkit-perspective: 150px;
+    -webkit-perspective-origin: right center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: scaleX(0.88) scaleY(0.95);
+    -o-perspective: 150px;
+    -o-perspective-origin: right center;
+    -o-transform-style: preserve-3d;
+    -o-transform: scaleX(0.88) scaleY(0.95);
+    -ms-perspective: 150px;
+    -ms-perspective-origin: right center;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: scaleX(0.88) scaleY(0.95);
+    perspective: 150px;
+    perspective-origin: right center;
+    transform-style: preserve-3d;
+    transform: scaleX(0.88) scaleY(0.95);
+}
+
+/* //
+Libro 3D - Book Cover  */
+/* Tilted Book Cover Image */
+.libro img {
+    display: block;
+    height: 375px;
+    width: 276px;
+    position: absolute;
+    z-index: 5;
+    -ms-transform: rotateY(-4deg) translateZ(0px);
+    -o-transform: rotateY(-4deg) translateZ(0px);
+    -moz-transform: rotateY(-4deg) translateZ(0px);
+    -webkit-transform: rotateY(-4deg) translateZ(0px);
+    transform: rotateY(-4deg) translateZ(0px);
+}
+
+/* //
+Tilted Book Cover Image */
+/* 3D Book  Binding Style */
+.libro:before,.libro:after {
+    content: '';
+    position: absolute;
+}
+
+/* //
+3D Book  Binding Style */
+/* 3D Book  Binding Outline */
+.libro:before {
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    background: #89221B;
+    z-index: 2;
+    -ms-transform: rotateY(-4deg) translateZ(0px);
+    -o-transform: rotateY(-4deg) translateZ(0px);
+    -moz-transform: rotateY(-4deg) translateZ(0px);
+    -webkit-transform: rotateY(-4deg) translateZ(0px);
+    transform: rotateY(-4deg) translateZ(0px);
+}
+
+/* //
+3D Book  Binding Outline */
+/* 3D Book Binding Pages */
+.libro:after {
+    background: #F5F5F5;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1),18px 3px 20px rgba(0,0,0,0.25) inset;
+    height: 98%;
+    width: 30px;
+    right: -19px;
+    top: 1%;
+    z-index: 3;
+    -moz-perspective: 5px;
+    -moz-transform: rotateY(20deg) translateZ(5px);
+    -webkit-perspective: 5px;
+    -webkit-transform: rotateY(20deg) translateZ(5px);
+    -o-perspective: 5px;
+    -o-transform: rotateY(20deg) translateZ(5px);
+    -ms-perspective: 5px;
+    -ms-transform: rotateY(20deg) translateZ(5px);
+    perspective: 5px;
+    transform: rotateY(20deg) translateZ(5px);
+}
+
+/* //
+3D Book Binding Pages */
+/* 3D Book Shadow */
+.libro span {
+    display: block;
+    position: absolute;
+    bottom: -13px;
+    height: 100px;
+    right: -110px;
+    width: 200px;
+    background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,0.1) 15%);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.1) 15%);
+    border-radius: 15px;
+    box-shadow: 5px 12px 15px 5px rgba(0,0,0,0.1);
+    -ms-transform: rotate(5deg) skew(-35deg);
+    -o-transform: rotate(5deg) skew(-35deg);
+    -moz-transform: rotate(5deg) skew(-35deg);
+    -webkit-transform: rotate(5deg) skew(-35deg);
+    transform: rotate(5deg) skew(-35deg);
+}
+
+/* //
+3D Book Shadow */
+/* //
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+3D LIBARAY BOOK (SINGLE BOOK PAGE)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ PAPER STYLE BUTTONS (SINGLE BOOK PAGE)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Source: https://codepen.io/ashleynolan/pen/djpCG Codpen user Ashley Nolan */
+/* Base Paper   Button Style */
+.btn {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -o-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+/* Base Paper Button Ease Out */
+.btn:before,.btn:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    -o-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+/* //
+Base Paper Button Ease Out */
+/*  Paper Effect – Slightly Raised Off Background */
+.paper {
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(128,128,128,0.1) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(128,128,128,0.1) inset;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(128,128,128,0.1) inset;
+    border-color: #dedede;
+}
+
+/* @ Raised Effect – Pushes Up On Hover */
+.paper-raise:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Raise Effect Button Border*/
+.paper-raise:hover {
+    border: 1px solid #fff;
+}
+
+/* //
+Raise Effect Button Border */
+/* Raise Effect Button Shadow on Hover */
+.paper-raise:hover:before {
+    box-shadow: 0 15px 10px -10px rgba(31,31,31,0.5);
+}
+
+/* Raise Effect Button Shadow on Hover */
+/* Raise Effect Flatten Button Border */
+.paper-raise-flatten {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+/* //
+Raise Effect Flatten Button Border */
+/* */
+.paper-raise-flatten:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 10px -10px rgba(31,31,31,0.5);
+}
+
+/* //
+*/
+/* Raise Effect Flatten Button Border on Hover */
+.paper-raise-flatten:hover {
+    border-color: #dedede;
+}
+
+/* Raise Effect Flatten Button Border on Hover */
+/* */
+.paper-raise-flatten:hover:before {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(128,128,128,0.1) inset;
+}
+
+/* //
+*/
+/* //
+@ Raised Effect – Pushes Up On Hover */
+/* @ Lift effect – lifts sides on hover */
+.paper-lift:before,.paper-lift:after {
+    bottom: 15px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 100px;
+    box-shadow: 0 10px 10px rgba(31,31,31,0.5);
+}
+
+/* */
+.paper-lift:before {
+    left: 8px;
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+/* //
+*/
+/* */
+.paper-lift:after {
+    right: 8px;
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+/* //
+*/
+/* */
+.paper-lift:hover {
+    border-color: transparent;
+}
+
+/* //
+*/
+/* */
+.paper-lift:hover:before,.paper-lift:hover:after {
+    -moz-box-shadow: 0 15px 12px rgba(31,31,31,0.7);
+    -webkit-box-shadow: 0 15px 12px rgba(31,31,31,0.7);
+    box-shadow: 0 15px 12px rgba(31,31,31,0.7);
+}
+
+/* //
+*/
+/* */
+.paper-lift:hover:before {
+    left: 10px;
+}
+
+/* //
+*/
+/* */
+.paper-lift:hover:after {
+    right: 10px;
+}
+
+/* //
+*/
+/* //
+@ Lift effect – lifts sides on hover */
+/* @ Flatten effect – flattens sides on hover */
+.paper-flatten {
+    border: 1px solid transparent;
+}
+
+/* //
+*/
+/* */
+.paper-flatten:before,.paper-flatten:after {
+    bottom: 15px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 100px;
+    box-shadow: 0 15px 12px rgba(31,31,31,0.7);
+}
+
+/* //
+*/
+/* */
+.paper-flatten:before {
+    left: 10px;
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+/* //
+*/
+
+/* */
+.paper-flatten:after {
+    right: 10px;
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(-3deg);
+}
+
+/* //
+*/
+/* */
+.paper-flatten:hover {
+    border-color: #ccc;
+}
+
+/* //
+*/
+/* */
+.paper-flatten:hover:before,.paper-flatten:hover:after {
+    -o-transition: box-shadow 600ms ease-out,left 200ms,right 200ms;
+    -moz-transition: box-shadow 600ms ease-out,left 200ms,right 200ms;
+    -webkit-transition: box-shadow 600ms ease-out,left 200ms,right 200ms;
+    transition: box-shadow 600ms ease-out,left 200ms,right 200ms;
+    box-shadow: 0 8px 8px rgba(31,31,31,0.5);
+}
+
+/* //
+*/
+/* */
+.paper-flatten:hover:before {
+    left: 5px;
+}
+
+/* //
+*/
+/* */
+.paper-flatten:hover:after {
+    right: 5px;
+}
+
+/* ..
+*/
+/* //
+@ Flatten effect – flattens sides on hover */
+/* @ Curl effects – curls corners on hover */
+.paper-curl:before,.paper-curl:after,.paper-curl-right:before,.paper-curl-right:after {
+    bottom: 12px;
+    width: 50%;
+    height: 55%;
+    max-width: 200px;
+    max-height: 100px;
+    box-shadow: 1px 8px 12px rgba(31,31,31,0.6);
+}
+
+/* */
+.paper-curl:before,.paper-curl-right:before {
+    left: 10px;
+}
+
+/* //
+*/
+/* */
+.paper-curl:after,.paper-curl-right:after {
+    right: 10px;
+}
+
+/* //
+*/
+/* */
+.paper-curl:hover:before,.paper-curl:hover:after,.paper-curl-right:hover:before,.paper-curl-right:hover:after {
+    box-shadow: 1px 8px 12px rgba(31,31,31,0.8);
+}
+
+/* //
+*/
+/* */
+.paper-curl:hover:before,.paper-curl-right:hover:before {
+    -ms-transform: skew(-8deg) rotate(-3deg);
+    -o-transform: skew(-8deg) rotate(-3deg);
+    -moz-transform: skew(-8deg) rotate(-3deg);
+    -webkit-transform: skew(-8deg) rotate(-3deg);
+    transform: skew(-8deg) rotate(-3deg);
+}
+
+/* //
+*/
+
+/* */
+.paper-curl:hover:after,.paper-curl-right:hover:after {
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -webkit-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+/* //
+*/
+/* */
+.paper-curl:hover {
+    border-radius: 0 0 40% 40% / 0 0 30% 30%;
+}
+
+/* //
+*/
+/* */
+.paper-curl-right:before {
+    display: none;
+}
+
+/* //
+*/
+/* */
+.paper-curl-right:hover {
+    border-radius: 0 0 40% 0 / 0 0 30% 0;
+}
+
+/* //
+*/
+/* //
+@ Curl effects – curls corners on hover */
+/* @ Curl effects – curls right hand side on hover */
+.paper-curl-right-side:before,.paper-curl-right-side:after {
+    right: 10px;
+    width: 50%;
+    height: 55%;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/* //
+*/
+/* */
+.paper-curl-right-side:before {
+    top: 12px;
+    box-shadow: 1px -4px 12px rgba(31,31,31,0.6);
+}
+
+/* //
+*/
+/* */
+.paper-curl-right-side:after {
+    bottom: 12px;
+    box-shadow: 1px 4px 12px rgba(31,31,31,0.6);
+}
+
+/* //
+*/
+/* */
+.paper-curl-right-side:hover {
+    right: 0;
+    border-radius: 0 3% 3% 0 / 0 50% 50% 0;
+}
+
+/* //
+*/
+/* */
+.paper-curl-right-side:hover:before {
+    box-shadow: 10px -4px 12px rgba(31,31,31,0.8);
+    -ms-transform: skew(-8deg) rotate(-3deg);
+    -o-transform: skew(-8deg) rotate(-3deg);
+    -moz-transform: skew(-8deg) rotate(-3deg);
+    -webkit-transform: skew(-8deg) rotate(-3deg);
+    transform: skew(-8deg) rotate(-3deg);
+}
+
+/* //
+*/
+/* */
+.paper-curl-right-side:hover:after {
+    box-shadow: 10px 4px 12px rgba(31,31,31,0.8);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -webkit-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+/* //
+*/
+/* //
+@ Curl effects – curls right hand side on hover */
+/* //
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+PAPER STYLE BUTTONS (SINGLE BOOK PAGE)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ LETTER STYLE CONTAINER (SINGLE CHAPTER PAGES)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Codepen by  https://codepen.io/mlms13/pen/LKFoy */
+/* */
+.left-align {
+    text-align: right;
+}
+
+/* //
+*/
+/* //
+*/
+/* */
+.letter p {
+    font-size: 18px;
+    line-height: 1.61803398875em;
+    padding: 10px;
+}
+
+/* //
+*/
+/* */
+.letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 26px auto 0;
+    max-width: 950px;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    margin-top: 80px;
+}
+
+/* //
+*/
+/* */
+.letter:before,.letter:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* //
+*/
+/* */
+.letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    left: -5px;
+    top: 4px;
+    -ms-transform: rotate(-2.5deg);
+    -o-transform: rotate(-2.5deg);
+    -moz-transform: rotate(-2.5deg);
+    -webkit-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg);
+}
+
+/* //
+*/
+/* */
+.letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    right: -3px;
+    top: 1px;
+    -ms-transform: rotate(1.4deg);
+    -o-transform: rotate(1.4deg);
+    -moz-transform: rotate(1.4deg);
+    -webkit-transform: rotate(1.4deg);
+    transform: rotate(1.4deg);
+}
+
+/* //
+*/
+/* //
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+LETTER STYLE CONTAINER (SINGLE CHAPTER PAGES)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - -
+ EPUB LIKE STYLES (SINGLE CHAPTER PAGES)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* 10% Left Indent */
+.indent {
+    margin-left: 10%;
+}
+
+/* //
+10% Left Indent */
+/* //
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+EPUB LIKE STYLES (SINGLE CHAPTER PAGES)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+TABLE OF CONTENTS NATURAL-CURVES EXAMPLE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* https://codepen.io/chrisnager/pen/CFjpK Codpen user Chris Nager */
+.natural-curves {
+    width: 90%;
+    margin: 0 auto;
+    border: .1em solid;
+    border-radius: 1.5em;
+/* 2 */
+    color: #a9a9a9;
+    background: #f1f1f1;
+/* 1 */
+    box-shadow: .05em .1em .6em rgba(0,0,0,0.25),.1em .2em .6em rgba(0,0,0,0.5) inset;
+}
+
+.natural-curves-inner {
+    padding: 1.5em;
+    overflow: hidden;
+/* 3 */
+/*
+    border-radius: 1em;
+    background: burlywood;
+
+*/
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+BACKGROUND RADIAL PROGRESS BAR (SINGLE BOOK PAGE)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*
+      @title: CSS3 Background Radial Progress Bars
+      @author: @geedmo
+      @url: http://geedmo.com
+
+      https://codepen.io/pablinho/pen/qjBCt
+       Pen by Pablo
+    */
+/* -------------------------------------
+     * Bar container
+     * ------------------------------------- */
+.progress-radial {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    border: 2px solid #2f3439;
+    background-color: #ff6347;
+}
+
+/* -------------------------------------
+     * Optional centered circle w/text
+     * ------------------------------------- */
+.progress-radial .overlay {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fffde8;
+    border-radius: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+/* -------------------------------------
+     * Basic Mixin for progress-% class
+     * ------------------------------------- */
+.progress-0 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(left,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(90deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-5 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(342deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(108deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-10 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(324deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(126deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-15 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(306deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(144deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-20 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(288deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(162deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-25 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(top,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(180deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-30 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(252deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(198deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-35 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(234deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(216deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-40 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(216deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(234deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-45 {
+    background-image: -webkit-linear-gradient(left,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(198deg,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#2f3439 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(252deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-50 {
+    background-image: -webkit-linear-gradient(right,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(-90deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-55 {
+    background-image: -webkit-linear-gradient(162deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(-72deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-60 {
+    background-image: -webkit-linear-gradient(144deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(-54deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-65 {
+    background-image: -webkit-linear-gradient(126deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(-36deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-70 {
+    background-image: -webkit-linear-gradient(108deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(-18deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-75 {
+    background-image: -webkit-linear-gradient(bottom,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(0deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-80 {
+    background-image: -webkit-linear-gradient(72deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(18deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-85 {
+    background-image: -webkit-linear-gradient(54deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(36deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-90 {
+    background-image: -webkit-linear-gradient(36deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(54deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-95 {
+    background-image: -webkit-linear-gradient(18deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(72deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+.progress-100 {
+    background-image: -webkit-linear-gradient(left,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),-webkit-linear-gradient(right,#ff6347 50%,#2f3439 50%,#2f3439);
+    background-image: linear-gradient(90deg,#ff6347 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0)),linear-gradient(270deg,#ff6347 50%,#2f3439 50%,#2f3439);
+}
+
+:focus {
+    outline: 0;
+}
+
+/* // Reset */
+/* //
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    TABLE OF CONTENTS NATURAL-CURVES EXAMPLE
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    BUBBLE CONTAINER FOR TOS (SINGLE BOOK PAGE)
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* http://codepen.io/ds729/pen/bectB pen by ds729 */
+/* Bubble Container */
+.bubble {
+    clear: both;
+    margin: 0 auto;
+    width: 350px;
+    background: #f1f1f1;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    -khtml-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 90;
+/* the stack order: displayed under ribbon rectangle (100) */
+    box-shadow: .05em .1em .6em rgba(0,0,0,0.25),.1em .2em .6em rgba(0,0,0,0.5) inset;
+}
+
+/* //
+    Bubble Container */
+/* Ribbon Rectangle */
+.rectangle {
+    background: #8b0000;
+    height: 50px;
+    width: 380px;
+    position: relative;
+    left: -15px;
+    top: 30px;
+    float: left;
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.55);
+    -khtml-box-shadow: 0 0 4px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.55);
+    box-shadow: 0 0 4px rgba(0,0,0,0.55);
+    z-index: 100;
+/* the stack order: foreground */
+}
+
+/*//
+     Ribbon Rectangle */
+/* Ribbon Rectangle Header Text */
+.rectangle h2 {
+    font-size: 30px;
+    color: #fff;
+    padding-top: 6px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* //
+    Ribbon Rectangle Header Text */
+/* */
+.triangle-l {
+    border-color: transparent #7d90a3 transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: -30px;
+    top: 65px;
+    z-index: -1;
+/* displayed under bubble */
+}
+
+/* //
+*/
+/* */
+.triangle-r {
+    border-color: transparent transparent transparent #7d90a3;
+    border-style: solid;
+    border-width: 15px;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: 350px;
+    top: 35px;
+    z-index: -1;
+/* displayed under bubble */
+}
+
+/* //
+*/
+/* */
+.info {
+    padding: 60px 25px 35px;
+}
+
+/* //
+*/
+/* */
+#tocribbon {
+    margin: 50px auto 0;
+/* centered */
+    width: 400px;
+}
+
+/* //
+*/
+/* //
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        BUBBLE RIBBON CONTAINER FOR TOS (SINGLE BOOK PAGE)
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
