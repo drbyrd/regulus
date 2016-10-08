@@ -1,9 +1,9 @@
 <?php // Defines all the variables. Yay.
 
 	// Gets current Page URL so we can play
-	
+
 	$pageUrl = $_SERVER['REQUEST_URI'];
-	$pageUrlProcessed = substr($_SERVER['REQUEST_URI'], 0, -4);
+	$pageUrlProcessed = substr($_SERVER['REQUEST_URI'], 0, -5);
 	$book = "SELECT ID FROM book_meta WHERE Book_Link = '$pageUrlProcessed'";
 	$bookResult = $conn->query($book);
 	if (!$bookResult) {
@@ -15,14 +15,14 @@
 			$singleBookId = utf8_encode($row["ID"]);
 		}
 	}
-	
+
 	// Gets book main content.
 	$bookMain = "SELECT ID, Part_1_Top, Part_1_Content, Part_1_Bottom FROM book_content WHERE ID = '$singleBookId'";
 	$bookMainResult = $conn->query($bookMain);
 	if ($bookMainResult->num_rows > 0) {
 		// output data of each row
 		while($row = $bookMainResult->fetch_assoc()) {
-			$bodyText = utf8_encode($row["Part_1_Content"]); // Easiest, Smartest Way to Fix PHP/UTF-8 Compatability Issues 		
+			$bodyText = utf8_encode($row["Part_1_Content"]); // Easiest, Smartest Way to Fix PHP/UTF-8 Compatability Issues
 		}
 	}
 	else {
@@ -55,7 +55,7 @@
 	else {
 		echo "No Book Meta Data";
 	}
-	
+
 	// Gets author meta data
 	$authorMeta = "SELECT ID, Author_Name, Author_Link, Author_Image, Author_Description FROM author_meta";
 	$authorMetaResult = $conn->query($authorMeta);
@@ -72,7 +72,7 @@
 	else {
 		echo "No Author Meta Data";
 	}
-	
+
 	// Gets book topic meta data
 	$bookTopicMeta = "SELECT ID, Topic_Name, Topic_Link, Topic_Description, Topic_Image FROM book_topics";
 	$bookTopicResult = $conn->query($bookTopicMeta);
@@ -89,7 +89,7 @@
 	else {
 		echo "No Book Topic Meta Data";
 	}
-	
+
 	// Gets book publisher meta data
 	$bookPublisherMeta = "SELECT ID, Publisher_Name, Publisher_Link, Publisher_Description, Publisher_Image, Publisher_Website, Publisher_Location FROM publisher_meta";
 	$bookPublisherResult = $conn->query($bookPublisherMeta);
