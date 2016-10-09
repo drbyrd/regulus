@@ -62,7 +62,7 @@ include 'php/parse.php';
 					<?php echo $bookDescription;?>
                 </p>
 				<div id="book-launch-button">
-					<a href="along-civilizations-trail/text">Launch Book</a> <!-- BUG:
+					<a href="a-thousand-years-of-yesterdays/text">Launch Book</a> <!-- BUG:
             /titles/../ directs to titles/text, must append seo freindly linkback for book titles -->
 				</div>
 				<p id="book-edition">
@@ -106,8 +106,7 @@ include 'php/parse.php';
 				</a>
                 <!-- //
                     Book Discription -->
-					<?php print_r($needle); ?><br /><br />
-            </div>
+
             <!-- //
               First Row-->
             <!-- Second Row -->
