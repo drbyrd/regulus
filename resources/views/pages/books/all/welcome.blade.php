@@ -8,7 +8,7 @@
 
 <div class="card cardbk-rrb0001 card-rrb0001 ripple">
     <a class="fill-div" href=
-    "titles/a-thousand-years-of-yesterdays/"></a>
+    "titles/a-thousand-years-of-yesterdays"></a>
 </div>
 <!-- //
 Book Card rrb0001 -->
