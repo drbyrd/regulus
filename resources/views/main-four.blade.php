@@ -55,12 +55,12 @@
 
         <ul>
             <li class="active">
-                <a href="../../../../">Home</a>
+                <a href="./../../../">Home</a>
             </li>
 
 
             <li>
-                <a href="../../">Browse Books</a>
+                <a href="./../../../library/books/alls">Browse Books</a>
             </li>
 
 
