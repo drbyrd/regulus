@@ -48,6 +48,32 @@ class PagesController extends Controller {
           return view('pages.books.welcome');
         }
 
+        // Admin Forms Book Entry Submit Page
+        public function getAdminFormsBookEntrySubmit() {
+          return view('pages.admin.forms.submit');
+        }
+
+        // Admin Forms Publisher Add Page
+        public function getAdminFormsPublisherAdd() {
+          return view('pages.admin.forms.publisher-add');
+        }
+
+        // Admin Forms Topic Add Page
+        public function getAdminFormsTopicAdd() {
+          return view('pages.admin.forms.topic-add');
+        }
+
+        // Admin Forms Author Add Page
+        public function getAdminFormsAuthorAdd() {
+          return view('pages.admin.forms.author-add');
+        }
+
+
+        // Admin Forms Book Add Page
+        public function getAdminFormsBookAdd() {
+          return view('pages.admin.forms.book-add');
+        }
+
         // Admin Forms Page
         public function getAdminForms() {
           return view('pages.admin.forms.welcome');
