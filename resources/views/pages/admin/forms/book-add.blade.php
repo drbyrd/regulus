@@ -1,4 +1,6 @@
-@extends('main-three')
+@extends('main')
+
+@section('relation', '../../')
 
 @section('content')
 

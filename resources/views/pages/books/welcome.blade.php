@@ -1,4 +1,6 @@
-@extends('main-two')
+@extends('main')
+
+@section('relation', '../')
 
 @section('content')
 

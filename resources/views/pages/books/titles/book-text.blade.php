@@ -1,4 +1,4 @@
-@extends('main-five')
+@extends('main-text')
 
 @section('content')
 <?php

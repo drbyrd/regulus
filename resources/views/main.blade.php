@@ -9,15 +9,28 @@
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>Regulus Reader | Welcome</title>
-	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-	<link href="css/vendor/font-awesome.min.css" rel="stylesheet">
-	<link href="css/apps.css" rel="stylesheet">
-	<script src="js/vendor/jquery.min.js">
+	<meta content="@yield('meta-description')" name="description">
+	<meta content= "@yield('meta-keywords')" name="Keywords">
+	<meta name="twitter:card" content="@yield('twitter-card')" />
+	<meta name="twitter:site" content="@yield('twitter-site')" />
+	<meta name="twitter:creator" content="@yield('twitter-creator')" />
+	<meta content="@yield('og-url')" property="og:url">
+	<meta content="@yield('og-type')" property="og:type">
+	<meta content="@yield('og-title')" property="og:title">
+	<meta content="@yield('og-discription')" property="og:description">
+	<meta content="@yield('og-image')" property="og:image">
+	<meta content="259008020869851" property="fb:app_id">
+
+	<title>Reguls Reader | @yield('title')</title>
+
+	<link href="@yield('relation')css/vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="@yield('relation')css/vendor/font-awesome.min.css" rel="stylesheet">
+	<link href="@yield('relation')css/apps.css" rel="stylesheet">
+	<script src="@yield('relation')js/vendor/jquery.min.js">
 	</script>
-	<script src="js/vendor/bootstrap.min.js">
+	<script src="@yield('relation')js/vendor/bootstrap.min.js">
 	</script>
-	<script src="js/custom.js">
+	<script src="@yield('relation')js/custom.js">
 	</script>
 	<style>
 	</style>
@@ -44,10 +57,10 @@
 		</div>
 		<ul>
 			<li class="active">
-				<a href="./">Home</a>
+				<a href="./@yield('relation')">Home</a>
 			</li>
 			<li>
-				<a href="./library/books/alls">Browse Books</a>
+				<a href="./@yield('relation')library/books/alls">Browse Books</a>
 			</li>
 			<li>Brows Podcasts</li>
 			<li>Browse Video</li>
