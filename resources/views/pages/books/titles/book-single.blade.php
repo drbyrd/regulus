@@ -17,7 +17,7 @@ include 'php/parse.php';
 
 
                 <div class="libro"><span></span> <img alt="" src=
-                "book-cover.jpg"></div>
+                "../../../img/books/titles/a-thousand-years-of-yesterdays/book-cover.jpg"></div>
                 <br>
                 <br>
                 <!-- //
