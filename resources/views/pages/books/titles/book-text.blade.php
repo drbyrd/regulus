@@ -1,4 +1,4 @@
-@extends('main-book-text')
+@extends('main-five')
 
 @section('content')
 <?php
@@ -27,9 +27,6 @@ include 'php/parse.php';
             <hr>
       </div>
     </div>
-
-
-
 
 
     @endsection
