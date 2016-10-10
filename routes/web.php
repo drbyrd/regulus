@@ -49,6 +49,21 @@ Route::get('library/books/alls', 'PagesController@getBooksAll');
 /* Books Index Page */
 Route::get('library/books', 'PagesController@getBooks');
 
+/* Admin Form Book Entry Page */
+Route::get('admin/forms/submit', 'PagesController@getAdminFormsBookEntrySubmit');
+
+/* Admin Form Book Topic Add Page */
+Route::get('admin/forms/publisher-add', 'PagesController@getAdminFormsPublisherAdd');
+
+/* Admin Form Book Topic Add Page */
+Route::get('admin/forms/topic-add', 'PagesController@getAdminFormsTopicAdd');
+
+/* Admin Form Book Entry Page */
+Route::get('admin/forms/author-add', 'PagesController@getAdminFormsAuthorAdd');
+
+/* Admin Form Book Entry Page */
+Route::get('admin/forms/book-add', 'PagesController@getAdminFormsBookAdd');
+
 /* Admin Form Page */
 Route::get('/admin/forms', 'PagesController@getAdminForms');
 
