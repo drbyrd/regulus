@@ -119,6 +119,7 @@ header h1 {
     font-weight: 400;
     font-size: 20px;
     margin-top: 7px;
+    margin-right: 25px;
 }
 
 /* //
@@ -506,8 +507,7 @@ header .slider {
 [type='text'],textarea {
     display: block;
     box-sizing: border-box;
-    width: 57%;
-    height: 2.4375rem;
+    height: 3rem;
 /* padding: 0.5rem; */
 /* border: 1px solid #cacaca; */
 /* margin: 0 0 1rem; */
@@ -523,8 +523,7 @@ header .slider {
     transition: box-shadow 0.5s,border-color .25s ease-in-out;
     -webkit-appearance: none;
     -moz-appearance: none;
-    margin-left: 2%;
-    margin-top: 15px;
+    margin-left: 0%;
 }
 
 /* Text Input Area */
@@ -693,6 +692,7 @@ MEDIA QUARIES 599px
     /* Header Search Input Icon Mobile */
     .mobile-input input {
         display: initial;
+        margin-left: 2%;
     }/* //
     Header Search Input Icon Mobile */
 
@@ -2517,3 +2517,367 @@ BACKGROUND RADIAL PROGRESS BAR (SINGLE BOOK PAGE)
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         BUBBLE RIBBON CONTAINER FOR TOS (SINGLE BOOK PAGE)
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .container { margin: 25px auto; position: relative; width: 900px; }
+        #content {
+        	background: #f9f9f9;
+        	background: -moz-linear-gradient(top,  rgba(248,248,248,1) 0%, rgba(249,249,249,1) 100%);
+        	background: -webkit-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	background: -o-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	background: -ms-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	background: linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f9f9f9',GradientType=0 );
+        	-webkit-box-shadow: 0 1px 0 #fff inset;
+        	-moz-box-shadow: 0 1px 0 #fff inset;
+        	-ms-box-shadow: 0 1px 0 #fff inset;
+        	-o-box-shadow: 0 1px 0 #fff inset;
+        	box-shadow: 0 1px 0 #fff inset;
+        	border: 1px solid #c4c6ca;
+        	margin: 0 auto;
+        	padding: 25px;
+        	position: relative;
+        	text-align: center;
+        	text-shadow: 0 1px 0 #fff;
+        	width: 90%;
+        }
+
+
+        #content h1:after {
+        	background: rgb(126,126,126);
+        	background: -moz-linear-gradient(left,  rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
+        	background: -webkit-linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+        	background: -o-linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+        	background: -ms-linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+        	background: linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+            right: 0;
+        }
+        #content h1:before {
+        	background: rgb(126,126,126);
+        	background: -moz-linear-gradient(right,  rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
+        	background: -webkit-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+        	background: -o-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+        	background: -ms-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+        	background: linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+            left: 0;
+        }
+        #content:after,
+        #content:before {
+        	background: #f9f9f9;
+        	background: -moz-linear-gradient(top,  rgba(248,248,248,1) 0%, rgba(249,249,249,1) 100%);
+        	background: -webkit-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	background: -o-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	background: -ms-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	background: linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
+        	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f9f9f9',GradientType=0 );
+        	border: 1px solid #c4c6ca;
+        	content: "";
+        	display: block;
+        	height: 100%;
+        	left: -1px;
+        	position: absolute;
+        	width: 100%;
+        }
+        #content:after {
+        	-webkit-transform: rotate(2deg);
+        	-moz-transform: rotate(2deg);
+        	-ms-transform: rotate(2deg);
+        	-o-transform: rotate(2deg);
+        	transform: rotate(2deg);
+        	top: 0;
+        	z-index: -1;
+        }
+        #content:before {
+        	-webkit-transform: rotate(-3deg);
+        	-moz-transform: rotate(-3deg);
+        	-ms-transform: rotate(-3deg);
+        	-o-transform: rotate(-3deg);
+        	transform: rotate(-3deg);
+        	top: 0;
+        	z-index: -2;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .fixed {
+              position: fixed;
+              top: 70px;
+              left: 0%;
+              right: 0%;
+              height: 2.25em;
+              /* background: rgba(0,0,0,.25); */
+              background: #ddd;
+              border-bottom: 1px solid #ccc;
+              padding-left: 10%;
+              z-index: 9;
+            }
+            .progress-wrap {
+              background: #f52451;
+              margin-top: 1em;
+              height: 2px;
+              /* overflow: visible; */
+              overflow: hidden;
+              position: relative;
+              margin-left: 5%;
+              width: 90%;
+              max-width: 35em;
+              border: 1em solid #fff;
+              border-top-width: 0;
+              border-bottom-width: 0;
+              z-index: 0;
+            }
+            .progress-wrap .progress-bar {
+              position: absolute;
+              height: .75em;
+              /* background: rgba(0,0,0,.5); */
+              background: #fff;
+              width: 100%;
+              top: 0;
+              left: 0;
+              margin-top: -.25em;
+              z-index: 3;
+            }
+            article {
+              background-color: #fff;
+
+            }
+
+            .new-paragraph {
+              font-style: italic;
+              color: tomato;
+            }
+            .btn {
+              position: fixed;
+              top: 2rem; left: 9.9%;
+              -webkit-appearance: none;
+              -webkit-background-clip: padding;
+              -moz-background-clip: padding;
+              background-clip: padding-box;
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+              background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+              background-image: -moz-linear-gradient(#ffffff, #dddddd);
+              background-image: -o-linear-gradient(#ffffff, #dddddd);
+              background-image: linear-gradient(#ffffff, #dddddd);
+              border: 1px solid;
+              border-color: #dddddd #bbbbbb #999999;
+              cursor: pointer;
+              color: #333333;
+              display: inline-block;
+              font: bold 0.875rem/1.3 AvenirNextCondensed-DemiBold, "Lucida Grande", Corbel, "Trebuchet Ms", sans-serif;
+              outline: 0;
+              overflow: visible;
+              margin: 0;
+              padding: 3px 10px;
+              text-shadow: white 0 1px 1px;
+              text-decoration: none;
+              vertical-align: top;
+              width: auto;
+            }
+            .btn:hover {
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(1px, #eeeeee), color-stop(100%, #cccccc));
+              background-image: -webkit-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+              background-image: -moz-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+              background-image: -o-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+              background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+              text-decoration: none;
+            }
+            .btn:active {
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #eeeeee));
+              background-image: -webkit-linear-gradient(#dddddd, #eeeeee);
+              background-image: -moz-linear-gradient(#dddddd, #eeeeee);
+              background-image: -o-linear-gradient(#dddddd, #eeeeee);
+              background-image: linear-gradient(#dddddd, #eeeeee);
+              -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+              -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+              box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+              border-color: #999999 #bbbbbb #dddddd;
+            }
+            button::-moz-focus-inner {
+              border: 0;
+              padding: 0;
+            }
+
+
+            /* http://www.ghosthorses.co.uk/production-diary/super-simple-responsive-progress-bar/ */
+
+
+            /* -- Table of Contents -- */
+
+            #tableOfContents {
+                width: 320px;
+                color: #fff !important;
+                background: #222;
+                float: left;
+                position: fixed;
+                bottom: 0;
+                left: calc(25% - 160px);
+                z-index: 11;
+                font-size: 13px;
+                font-weight: normal;
+            }
+
+            #tableOfContents h2 {
+                padding: 0;
+                font-size: 13px;
+                font-weight: 700;
+                width: 100%;
+                margin: 0 !important;
+                line-height: 26px;
+                z-index: 10;
+                background: #EC6060;
+                position: relative;
+            }
+
+            #tableofContents:hover {
+              background: #985f56;
+            }
+
+            #tableOfContents h2 a {
+
+              /*  background: url("../img/tocArrow.jpg") no-repeat top left; */
+                padding: 10px 0 10px 50px;
+                width: 270px;
+                display: block;
+            }
+
+            #tableOfContents h2 a:hover {
+                background: #985f56;
+            }
+
+            #tableOfContents a {
+                color: #fff;
+                text-decoration: none;
+                width: 280px;
+                padding: 6px 10px;
+                margin: 0;
+                display: block;
+            }
+
+            #tableOfContents a:hover {
+                background: #333;
+            }
+
+            .sectionsWrapper {
+                padding-left: 40px;
+                background: transparent;
+                position: absolute;
+                width: 280px;
+                bottom: -200px;
+                visibility: hidden;
+            }
+
+            #tableOfContents dl {
+                margin: 0;
+                overflow: hidden;
+                background: #343E56;
+                padding: 0 0 20px 0;
+                width: 280px;
+                z-index: 10;
+            }
+
+            #tableOfContents dt {
+                padding: 0;
+                font-weight: 400;
+            }
+
+            .subsectionContent {
+                display: none;
+            }
+
+            .subsectionContent dd a {
+                color: #eee !important;
+                padding-left: 25px !important;
+                font-weight: 300;
+            }
+
+
+            * {
+              margin: 0;
+              padding: 0;
+            }
+            /* make things look nice */
+            body {
+              background: #eee;
+              font-family: sans-serif;
+              line-height: 1.5;
+              color: #555;
+            }
+            p {
+              margin-top: 16px;
+            }
+            h1 a {
+              text-decoration: none;
+              color: #111;
+            }
+            /* article base */
+
+            /* wrap-around */
+            .wrap-around {
+              position: relative;
+              display: inline-block;
+              margin-top: 32px;
+              margin-bottom:23px;
+              padding: 10px 24px 10px 48px;
+              margin-left: -22px;
+              background: red;
+              color: #fff;
+              text-decoration: none;
+            }
+            .wrap-around:before {
+              content: '';
+              position: absolute;
+              left: -6px;
+              bottom: -3px;
+              width: 6px;
+              height: 44px;
+              background: #800000;
+              transform: skewY(-45deg);
+            }
+            .wrap-around:after {
+              content: '';
+              position: absolute;
+              bottom: -6px;
+              left: -6px;
+              width: 6px;
+              height: 6px;
+              background: #000000;
+              z-index: -1;
+            }
+            .wrap-around:hover {
+              background: lightblue;
+            }
+            .wrap-around:hover:before {
+              background: #4baac8;
+            }
+            .wrap-around:hover:after {
+              background: #235e71;
+            }
