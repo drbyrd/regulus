@@ -1,6 +1,12 @@
 /*  - - - - - - - - - - - - - - - - - - -
 THEME STYLES
  - - - - - - - - - - - - - - - - - - - */
+
+/* NOTE: May be due to Foundation structure remnent */
+ .row {
+    margin-right: 7%;
+    margin-left: 7%;
+}
 /* Normalize All */
 *,:before,:after {
     box-sizing: border-box;
